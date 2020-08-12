@@ -16,6 +16,8 @@
 		582B97BC24E3CFD000774924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */; };
 		582B97C724E3CFD100774924 /* ZivameSysTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97C624E3CFD100774924 /* ZivameSysTestTests.swift */; };
 		582B97D224E3CFD100774924 /* ZivameSysTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */; };
+		58DAD46D24E3D8EB004350AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAD46C24E3D8EB004350AA /* Constants.swift */; };
+		58DAD46F24E3D8FF004350AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAD46E24E3D8FF004350AA /* Extensions.swift */; };
 		7C863471BC58228E5C3CC4CB /* Pods_ZivameSysTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */; };
 		9313FCDF2D1F1D882205EEB2 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006E5F7B8B932C5412DA5ED5 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework */; };
 		D1827E726CD3601072EA7EA7 /* Pods_ZivameSysTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E28DCFFBAAF422A97F3B1 /* Pods_ZivameSysTestTests.framework */; };
@@ -57,6 +59,8 @@
 		582B97CD24E3CFD100774924 /* ZivameSysTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZivameSysTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZivameSysTestUITests.swift; sourceTree = "<group>"; };
 		582B97D324E3CFD100774924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DAD46C24E3D8EB004350AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		58DAD46E24E3D8FF004350AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8192E7576484821B2BA6F738 /* Pods-ZivameSysTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest.release.xcconfig"; sourceTree = "<group>"; };
 		9072D9E6F94A6237DD972361 /* Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 		582B97AB24E3CFCF00774924 /* ZivameSysTest */ = {
 			isa = PBXGroup;
 			children = (
+				58DAD46B24E3D8CE004350AA /* Helpers */,
 				58DAD46A24E3D6E4004350AA /* Model */,
 				58DAD46924E3D6DD004350AA /* View */,
 				58DAD46824E3D6CE004350AA /* Controller */,
@@ -170,6 +175,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		58DAD46B24E3D8CE004350AA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58DAD46C24E3D8EB004350AA /* Constants.swift */,
+				58DAD46E24E3D8FF004350AA /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9A36A01B68B4C08C8FD61B95 /* Frameworks */ = {
@@ -434,6 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58DAD46D24E3D8EB004350AA /* Constants.swift in Sources */,
+				58DAD46F24E3D8FF004350AA /* Extensions.swift in Sources */,
 				582B97B124E3CFCF00774924 /* ViewController.swift in Sources */,
 				582B97B724E3CFCF00774924 /* ZivameSysTest.xcdatamodeld in Sources */,
 				582B97AD24E3CFCF00774924 /* AppDelegate.swift in Sources */,
