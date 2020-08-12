@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -118,12 +118,12 @@
 		582B97AB24E3CFCF00774924 /* ZivameSysTest */ = {
 			isa = PBXGroup;
 			children = (
+				58DAD46A24E3D6E4004350AA /* Model */,
+				58DAD46924E3D6DD004350AA /* View */,
+				58DAD46824E3D6CE004350AA /* Controller */,
 				582B97AC24E3CFCF00774924 /* AppDelegate.swift */,
 				582B97AE24E3CFCF00774924 /* SceneDelegate.swift */,
-				582B97B024E3CFCF00774924 /* ViewController.swift */,
-				582B97B224E3CFCF00774924 /* Main.storyboard */,
 				582B97B824E3CFD000774924 /* Assets.xcassets */,
-				582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */,
 				582B97BD24E3CFD000774924 /* Info.plist */,
 				582B97B524E3CFCF00774924 /* ZivameSysTest.xcdatamodeld */,
 			);
@@ -148,6 +148,30 @@
 			path = ZivameSysTestUITests;
 			sourceTree = "<group>";
 		};
+		58DAD46824E3D6CE004350AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				582B97B024E3CFCF00774924 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58DAD46924E3D6DD004350AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */,
+				582B97B224E3CFCF00774924 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58DAD46A24E3D6E4004350AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9A36A01B68B4C08C8FD61B95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +192,6 @@
 				3940ABA38E606386ED74F8C7 /* Pods-ZivameSysTestTests.debug.xcconfig */,
 				3DECBF7ED78817850393C650 /* Pods-ZivameSysTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
