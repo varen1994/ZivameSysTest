@@ -16,6 +16,9 @@
 		582B97BC24E3CFD000774924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */; };
 		582B97C724E3CFD100774924 /* ZivameSysTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97C624E3CFD100774924 /* ZivameSysTestTests.swift */; };
 		582B97D224E3CFD100774924 /* ZivameSysTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */; };
+		7C863471BC58228E5C3CC4CB /* Pods_ZivameSysTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */; };
+		9313FCDF2D1F1D882205EEB2 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006E5F7B8B932C5412DA5ED5 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework */; };
+		D1827E726CD3601072EA7EA7 /* Pods_ZivameSysTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E28DCFFBAAF422A97F3B1 /* Pods_ZivameSysTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006E5F7B8B932C5412DA5ED5 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZivameSysTest_ZivameSysTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3940ABA38E606386ED74F8C7 /* Pods-ZivameSysTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTestTests/Pods-ZivameSysTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DECBF7ED78817850393C650 /* Pods-ZivameSysTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTestTests.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTestTests/Pods-ZivameSysTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		582B97A924E3CFCF00774924 /* ZivameSysTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZivameSysTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582B97AC24E3CFCF00774924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582B97AE24E3CFCF00774924 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		582B97CD24E3CFD100774924 /* ZivameSysTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZivameSysTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZivameSysTestUITests.swift; sourceTree = "<group>"; };
 		582B97D324E3CFD100774924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8192E7576484821B2BA6F738 /* Pods-ZivameSysTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest.release.xcconfig"; sourceTree = "<group>"; };
+		9072D9E6F94A6237DD972361 /* Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D28CA60BDC0F4142904E1D8D /* Pods-ZivameSysTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZivameSysTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88E28DCFFBAAF422A97F3B1 /* Pods_ZivameSysTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZivameSysTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C863471BC58228E5C3CC4CB /* Pods_ZivameSysTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1827E726CD3601072EA7EA7 /* Pods_ZivameSysTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9313FCDF2D1F1D882205EEB2 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				582B97C524E3CFD100774924 /* ZivameSysTestTests */,
 				582B97D024E3CFD100774924 /* ZivameSysTestUITests */,
 				582B97AA24E3CFCF00774924 /* Products */,
+				C768CBCE57B6FE40D65B03E8 /* Pods */,
+				9A36A01B68B4C08C8FD61B95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,30 @@
 			path = ZivameSysTestUITests;
 			sourceTree = "<group>";
 		};
+		9A36A01B68B4C08C8FD61B95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */,
+				006E5F7B8B932C5412DA5ED5 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework */,
+				E88E28DCFFBAAF422A97F3B1 /* Pods_ZivameSysTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C768CBCE57B6FE40D65B03E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D28CA60BDC0F4142904E1D8D /* Pods-ZivameSysTest.debug.xcconfig */,
+				8192E7576484821B2BA6F738 /* Pods-ZivameSysTest.release.xcconfig */,
+				673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */,
+				9072D9E6F94A6237DD972361 /* Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig */,
+				3940ABA38E606386ED74F8C7 /* Pods-ZivameSysTestTests.debug.xcconfig */,
+				3DECBF7ED78817850393C650 /* Pods-ZivameSysTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 582B97D624E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTest" */;
 			buildPhases = (
+				C8A9E45970680B58BFB4AA98 /* [CP] Check Pods Manifest.lock */,
 				582B97A524E3CFCF00774924 /* Sources */,
 				582B97A624E3CFCF00774924 /* Frameworks */,
 				582B97A724E3CFCF00774924 /* Resources */,
+				EDE746FA2F989AF12E62C649 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 582B97D924E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTestTests" */;
 			buildPhases = (
+				EAFB8FD11200C57FD6BA8DF6 /* [CP] Check Pods Manifest.lock */,
 				582B97BE24E3CFD100774924 /* Sources */,
 				582B97BF24E3CFD100774924 /* Frameworks */,
 				582B97C024E3CFD100774924 /* Resources */,
@@ -173,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 582B97DC24E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTestUITests" */;
 			buildPhases = (
+				80ABDD00353FE8E90477F2A8 /* [CP] Check Pods Manifest.lock */,
 				582B97C924E3CFD100774924 /* Sources */,
 				582B97CA24E3CFD100774924 /* Frameworks */,
 				582B97CB24E3CFD100774924 /* Resources */,
+				B1B856C7827989712C0BB971 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +302,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80ABDD00353FE8E90477F2A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZivameSysTest-ZivameSysTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B856C7827989712C0BB971 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A9E45970680B58BFB4AA98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZivameSysTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAFB8FD11200C57FD6BA8DF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZivameSysTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE746FA2F989AF12E62C649 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		582B97A524E3CFCF00774924 /* Sources */ = {
@@ -436,6 +585,7 @@
 		};
 		582B97D724E3CFD100774924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28CA60BDC0F4142904E1D8D /* Pods-ZivameSysTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +603,7 @@
 		};
 		582B97D824E3CFD100774924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8192E7576484821B2BA6F738 /* Pods-ZivameSysTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +621,7 @@
 		};
 		582B97DA24E3CFD100774924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3940ABA38E606386ED74F8C7 /* Pods-ZivameSysTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +643,7 @@
 		};
 		582B97DB24E3CFD100774924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DECBF7ED78817850393C650 /* Pods-ZivameSysTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		582B97DD24E3CFD100774924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +685,7 @@
 		};
 		582B97DE24E3CFD100774924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9072D9E6F94A6237DD972361 /* Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
