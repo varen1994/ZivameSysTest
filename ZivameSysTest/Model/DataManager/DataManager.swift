@@ -25,7 +25,7 @@ final class DataManager: NSObject {
     func getAllTheProductInWallet()->[Product]? {
         if let productsInfo = self.fetchAllTheProductsFromCoreData(),productsInfo.count > 0 {
            var arrayProducts = [Product]()
-            for obj in productsInfo {
+            for obj in productsInfo where obj.numberOfItemsCart > 0 {
                 let product = Product()
                 product.name = obj.name
                 product.image_url = obj.imageURL

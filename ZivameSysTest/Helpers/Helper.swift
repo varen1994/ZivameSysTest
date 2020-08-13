@@ -48,3 +48,13 @@ class Helper: NSObject {
         SwiftMessages.show(config: config, view: message)
     }
 }
+
+@IBDesignable
+class RoundButton:UIButton {
+    @IBInspectable var cornerRadius:CGFloat = 0.0  {
+        didSet {
+            self.layer.cornerRadius = self.cornerRadius
+            self.layer.masksToBounds = true
+        }
+    }
+}

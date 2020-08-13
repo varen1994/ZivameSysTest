@@ -8,8 +8,9 @@
 
 import UIKit
 
-class CartViewModel: NSObject {
+class GadgetsViewModel: NSObject {
 
+    
     typealias CompletionHandler = (CartData?,String?)->Void
     
     override init() {
@@ -29,5 +30,15 @@ class CartViewModel: NSObject {
                  completionHandler(cartData,error)
             }
         }
+    }
+    
+    func changeTheListOfDataWithisWishListItem(products:[Product]?) {
+        if let products = products {
+         for obj in products {
+            let tupple = DataManager.shared.getProductsNumberOfItemInCartAndIfIsPresentInTheWishList(product: obj)
+            obj.isWishListItem = tupple.1
+            obj.numberOfItems = tupple.0
+         }
+       }
     }
 }
