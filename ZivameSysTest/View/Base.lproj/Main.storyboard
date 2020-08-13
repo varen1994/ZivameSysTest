@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--CART-->
+        <!--GADGETS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CartViewController" customModule="ZivameSysTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GadgetsViewController" customModule="ZivameSysTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,14 +30,73 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CART" id="Qdz-7C-JCb"/>
+                    <navigationItem key="navigationItem" title="GADGETS" id="Qdz-7C-JCb"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGagetListVC" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="cartTableView" destination="bhs-rX-1Tg" id="YJH-KI-qBz"/>
+                        <outlet property="cartTableView" destination="bhs-rX-1Tg" id="Ypq-5A-xTf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="125.89285714285714"/>
+        </scene>
+        <!--CART-->
+        <scene sceneID="EC4-95-zCN">
+            <objects>
+                <viewController restorationIdentifier="CartViewController" storyboardIdentifier="CartViewController" title="CART" id="bxh-Ku-Zj2" customClass="CartViewController" customModule="ZivameSysTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2x3-Og-yff">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UsR-jE-R4i">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R5-UH-gP9" customClass="RoundButton" customModule="ZivameSysTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="787" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.94582084759999996" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ofa-xS-2GC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Checkout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickedOnCheckOutButton:" destination="bxh-Ku-Zj2" eventType="touchUpInside" id="kpa-oO-Hiv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Z8u-AK-JKm" firstAttribute="bottom" secondItem="7R5-UH-gP9" secondAttribute="bottom" constant="30" id="5d9-ck-0hk"/>
+                            <constraint firstItem="UsR-jE-R4i" firstAttribute="trailing" secondItem="Z8u-AK-JKm" secondAttribute="trailing" id="E9c-eQ-9bw"/>
+                            <constraint firstItem="UsR-jE-R4i" firstAttribute="bottom" secondItem="Z8u-AK-JKm" secondAttribute="bottom" id="FxK-tL-rzJ"/>
+                            <constraint firstItem="UsR-jE-R4i" firstAttribute="top" secondItem="Z8u-AK-JKm" secondAttribute="top" id="HZB-vg-nFx"/>
+                            <constraint firstItem="UsR-jE-R4i" firstAttribute="leading" secondItem="Z8u-AK-JKm" secondAttribute="leading" id="Hya-2L-gyR"/>
+                            <constraint firstItem="Z8u-AK-JKm" firstAttribute="trailing" secondItem="7R5-UH-gP9" secondAttribute="trailing" constant="20" id="Kdr-dw-nfk"/>
+                            <constraint firstItem="7R5-UH-gP9" firstAttribute="leading" secondItem="Z8u-AK-JKm" secondAttribute="leading" constant="20" id="xAG-Wf-4E3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z8u-AK-JKm"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGagetListVC" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="cartTableView" destination="UsR-jE-R4i" id="xX8-zE-cNX"/>
+                        <outlet property="checkOutButton" destination="7R5-UH-gP9" id="2VB-Hg-AZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="991-9u-CGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="123.88392857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xIt-QJ-BIh">
@@ -47,6 +106,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="941-RR-zGo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         </textAttributes>
