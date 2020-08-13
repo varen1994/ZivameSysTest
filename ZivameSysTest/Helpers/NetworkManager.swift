@@ -24,7 +24,7 @@ class NetworkManager: NSObject {
                   case .unavailable:
                     Helper.createAnAlertForNetworkFailure()
                   default:
-                     Helper.createAnAlertForNetworkSuccessfullyJoined()
+                    return
                 }
             }
           try self.reachability?.startNotifier()
@@ -37,7 +37,7 @@ class NetworkManager: NSObject {
       let reachability = note.object as! Reachability
        switch reachability.connection {
           case .wifi,.cellular:
-            Helper.createAnAlertForNetworkSuccessfullyJoined()
+            return
           default:
              Helper.createAnAlertForNetworkFailure()
         }

@@ -18,7 +18,16 @@ class CartViewModel: NSObject {
     
     func getCartData(completionHandler:@escaping CompletionHandler) {
         ApiManager.shared.getCartItems { (cartData, error) in
-            completionHandler(cartData,error)
+            if let products = cartData?.products {
+                for obj in products {
+                    let tupple = DataManager.shared.getProductsNumberOfItemInCartAndIfIsPresentInTheWishList(product: obj)
+                    obj.isWishListItem = tupple.1
+                    obj.numberOfItems = tupple.0
+                }
+                completionHandler(cartData,error)
+            } else {
+                 completionHandler(cartData,error)
+            }
         }
     }
 }
