@@ -25,17 +25,13 @@ class CartViewController: BaseViewController,BaseViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-        self.getItemsFromCoreData()
-    }
-    
-    func getItemsFromCoreData() {
-       upDateCartItemsCount()
+        self.upDateCartItemsCount()
     }
     
     func upDateCartItemsCount() {
-        //self.products = DataManager.shared.getAllTheProductInWallet()
         self.cartTableView.delegate = self
         self.cartTableView.dataSource = self
+        self.removeProductsWithZeroItems()
         if (self.products?.count ?? 0) != 0 {
             self.cartTableView.separatorStyle = .singleLine
             self.cartTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0 )
@@ -49,6 +45,13 @@ class CartViewController: BaseViewController,BaseViewControllerDelegate {
         self.cartTableView.reloadData()
     }
     
+    func removeProductsWithZeroItems() {
+        guard let products = self.products else { return }
+        for (index,product) in products.enumerated() where (product.numberOfItems ?? 0) == 0 {
+            self.products?.remove(at: index)
+        }
+    }
+    
     @IBAction func clickedOnCheckOutButton(_ sender: Any) {
         self.view.isUserInteractionEnabled = false
         self.view.insertSubview(self.activityIndicator, aboveSubview: self.cartTableView)
@@ -59,7 +62,16 @@ class CartViewController: BaseViewController,BaseViewControllerDelegate {
            self.setAllProductsCount()
            self.products = nil
            self.upDateCartItemsCount()
+           self.pushToOrderSuccessViewController()
         }
+    }
+    
+    func pushToOrderSuccessViewController() {
+        guard let orderVC = self.storyboard?.instantiateViewController(identifier: "OrderSuccessViewController") as? OrderSuccessViewController else { return }
+        var children = self.navigationController?.children
+        children?.removeLast()
+        children?.append(orderVC)
+        self.navigationController?.setViewControllers(children!, animated: true)
     }
     
     func setAllProductsCount() {
