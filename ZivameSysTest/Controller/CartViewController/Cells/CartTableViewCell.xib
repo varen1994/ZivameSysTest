@@ -24,16 +24,30 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-JQ-S1x">
                                         <rect key="frame" x="10" y="10" width="65" height="65"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="small"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uw0-NS-9Hy">
+                                        <rect key="frame" x="50" y="-4" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.94582084759999996" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="I9o-5i-THl"/>
+                                            <constraint firstAttribute="width" constant="30" id="cCu-Oz-WoM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1.6018515230000001e-07" green="0.46245932579999999" blue="0.72913664580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2Ye-eQ-fyD" secondAttribute="height" multiplier="1:1" id="0Bt-ah-XYC"/>
                                     <constraint firstItem="xcc-JQ-S1x" firstAttribute="leading" secondItem="2Ye-eQ-fyD" secondAttribute="leading" constant="10" id="75Z-xa-KQr"/>
                                     <constraint firstAttribute="trailing" secondItem="xcc-JQ-S1x" secondAttribute="trailing" constant="10" id="DGh-nW-0Gs"/>
                                     <constraint firstItem="xcc-JQ-S1x" firstAttribute="top" secondItem="2Ye-eQ-fyD" secondAttribute="top" constant="10" id="M4L-jZ-J6I"/>
                                     <constraint firstAttribute="bottom" secondItem="xcc-JQ-S1x" secondAttribute="bottom" constant="10" id="pdV-z2-hDS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uw0-NS-9Hy" secondAttribute="trailing" constant="5" id="sTW-EB-TVN"/>
+                                    <constraint firstItem="Uw0-NS-9Hy" firstAttribute="top" secondItem="2Ye-eQ-fyD" secondAttribute="top" constant="-4" id="zdd-dx-ruc"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fcm-n0-E4q">
@@ -53,7 +67,7 @@
                                     </label>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3e-bS-SB6" customClass="CosmosView" customModule="Cosmos">
                                         <rect key="frame" x="0.0" y="50" width="296" height="25"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -99,6 +113,7 @@
                 <outlet property="itemImageView" destination="xcc-JQ-S1x" id="PUm-Ge-cKL"/>
                 <outlet property="itemPriceLabel" destination="5nY-X5-Z0I" id="WPB-jK-sDu"/>
                 <outlet property="itemTitleLabel" destination="o2Z-Xk-9zh" id="5jh-m4-5tI"/>
+                <outlet property="numberOfItemsInCartLabel" destination="Uw0-NS-9Hy" id="Pma-eC-7cI"/>
                 <outlet property="outerView" destination="jKI-mz-sdZ" id="5La-Rp-VNC"/>
                 <outlet property="starView" destination="G3e-bS-SB6" id="RUn-9N-4KJ"/>
             </connections>

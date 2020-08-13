@@ -22,6 +22,9 @@
 		58C48D0E24E50FFD00F7366E /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */; };
 		58C48D1124E529D000F7366E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1024E529D000F7366E /* DataManager.swift */; };
 		58C48D1324E5343000F7366E /* CustomCartBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1224E5343000F7366E /* CustomCartBarButton.swift */; };
+		58C48D1624E549A200F7366E /* ProductInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1424E549A200F7366E /* ProductInfo+CoreDataClass.swift */; };
+		58C48D1724E549A200F7366E /* ProductInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1524E549A200F7366E /* ProductInfo+CoreDataProperties.swift */; };
+		58C48D1A24E5628D00F7366E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1924E5628D00F7366E /* BaseViewController.swift */; };
 		58D3075F24E418F500EC6611 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3075E24E418F500EC6611 /* ApiManager.swift */; };
 		58D3076124E41A9E00EC6611 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3076024E41A9E00EC6611 /* NetworkManager.swift */; };
 		58D3076324E41DF500EC6611 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3076224E41DF500EC6611 /* Helper.swift */; };
@@ -74,6 +77,9 @@
 		58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
 		58C48D1024E529D000F7366E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		58C48D1224E5343000F7366E /* CustomCartBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCartBarButton.swift; sourceTree = "<group>"; };
+		58C48D1424E549A200F7366E /* ProductInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58C48D1524E549A200F7366E /* ProductInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		58C48D1924E5628D00F7366E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		58D3075E24E418F500EC6611 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		58D3076024E41A9E00EC6611 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		58D3076224E41DF500EC6611 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -189,9 +195,18 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		58C48D1824E5627400F7366E /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D1924E5628D00F7366E /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		58DAD46824E3D6CE004350AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				58C48D1824E5627400F7366E /* BaseViewController */,
 				58DAD47024E3DE60004350AA /* CartViewController */,
 			);
 			path = Controller;
@@ -209,6 +224,8 @@
 		58DAD46A24E3D6E4004350AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				58C48D1424E549A200F7366E /* ProductInfo+CoreDataClass.swift */,
+				58C48D1524E549A200F7366E /* ProductInfo+CoreDataProperties.swift */,
 				58C48D0F24E529B300F7366E /* DataManager */,
 				58D3075E24E418F500EC6611 /* ApiManager.swift */,
 				58BDD63E24E504AB00FB33F7 /* Products.swift */,
@@ -507,8 +524,11 @@
 				58D3076324E41DF500EC6611 /* Helper.swift in Sources */,
 				58D3075F24E418F500EC6611 /* ApiManager.swift in Sources */,
 				58D3076124E41A9E00EC6611 /* NetworkManager.swift in Sources */,
+				58C48D1A24E5628D00F7366E /* BaseViewController.swift in Sources */,
+				58C48D1724E549A200F7366E /* ProductInfo+CoreDataProperties.swift in Sources */,
 				582B97B724E3CFCF00774924 /* ZivameSysTest.xcdatamodeld in Sources */,
 				58C48D1324E5343000F7366E /* CustomCartBarButton.swift in Sources */,
+				58C48D1624E549A200F7366E /* ProductInfo+CoreDataClass.swift in Sources */,
 				58BDD63F24E504AB00FB33F7 /* Products.swift in Sources */,
 				582B97AD24E3CFCF00774924 /* AppDelegate.swift in Sources */,
 				582B97AF24E3CFCF00774924 /* SceneDelegate.swift in Sources */,
