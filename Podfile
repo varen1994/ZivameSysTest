@@ -8,6 +8,8 @@ target 'ZivameSysTest' do
   pod 'ReachabilitySwift', '~> 5.0'
   pod 'SwiftMessages'
   pod 'SDWebImage', '4.4.3'
+  pod 'Alamofire', '4.8.0'
+  pod 'Cosmos', '~> 22.1'
   
 
   target 'ZivameSysTestTests' do
