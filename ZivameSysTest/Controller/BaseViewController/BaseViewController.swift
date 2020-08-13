@@ -125,7 +125,7 @@ extension BaseViewController:CartTableViewCellDelegate {
         }
         self.view.insertSubview(imageView!, aboveSubview: self.cartTableView)
         self.view.isUserInteractionEnabled = false
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 2.0, animations: {
             imageView!.frame = toFrame
             imageView!.alpha = 0.25
         }) { (_) in
