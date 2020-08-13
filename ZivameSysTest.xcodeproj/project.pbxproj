@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		582B97AD24E3CFCF00774924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97AC24E3CFCF00774924 /* AppDelegate.swift */; };
 		582B97AF24E3CFCF00774924 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97AE24E3CFCF00774924 /* SceneDelegate.swift */; };
-		582B97B124E3CFCF00774924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97B024E3CFCF00774924 /* ViewController.swift */; };
+		582B97B124E3CFCF00774924 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97B024E3CFCF00774924 /* CartViewController.swift */; };
 		582B97B424E3CFCF00774924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582B97B224E3CFCF00774924 /* Main.storyboard */; };
 		582B97B724E3CFCF00774924 /* ZivameSysTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 582B97B524E3CFCF00774924 /* ZivameSysTest.xcdatamodeld */; };
 		582B97B924E3CFD000774924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582B97B824E3CFD000774924 /* Assets.xcassets */; };
 		582B97BC24E3CFD000774924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */; };
 		582B97C724E3CFD100774924 /* ZivameSysTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97C624E3CFD100774924 /* ZivameSysTestTests.swift */; };
 		582B97D224E3CFD100774924 /* ZivameSysTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */; };
+		58BDD63F24E504AB00FB33F7 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDD63E24E504AB00FB33F7 /* Products.swift */; };
+		58BDD64124E5069F00FB33F7 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDD64024E5069F00FB33F7 /* CartViewModel.swift */; };
+		58C48D0D24E50FFD00F7366E /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D0B24E50FFD00F7366E /* CartTableViewCell.swift */; };
+		58C48D0E24E50FFD00F7366E /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */; };
+		58C48D1124E529D000F7366E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1024E529D000F7366E /* DataManager.swift */; };
+		58C48D1324E5343000F7366E /* CustomCartBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1224E5343000F7366E /* CustomCartBarButton.swift */; };
+		58D3075F24E418F500EC6611 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3075E24E418F500EC6611 /* ApiManager.swift */; };
+		58D3076124E41A9E00EC6611 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3076024E41A9E00EC6611 /* NetworkManager.swift */; };
+		58D3076324E41DF500EC6611 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3076224E41DF500EC6611 /* Helper.swift */; };
 		58DAD46D24E3D8EB004350AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAD46C24E3D8EB004350AA /* Constants.swift */; };
 		58DAD46F24E3D8FF004350AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAD46E24E3D8FF004350AA /* Extensions.swift */; };
 		7C863471BC58228E5C3CC4CB /* Pods_ZivameSysTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */; };
@@ -47,7 +56,7 @@
 		582B97A924E3CFCF00774924 /* ZivameSysTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZivameSysTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582B97AC24E3CFCF00774924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582B97AE24E3CFCF00774924 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		582B97B024E3CFCF00774924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		582B97B024E3CFCF00774924 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		582B97B324E3CFCF00774924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		582B97B624E3CFCF00774924 /* ZivameSysTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZivameSysTest.xcdatamodel; sourceTree = "<group>"; };
 		582B97B824E3CFD000774924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +68,15 @@
 		582B97CD24E3CFD100774924 /* ZivameSysTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZivameSysTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZivameSysTestUITests.swift; sourceTree = "<group>"; };
 		582B97D324E3CFD100774924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BDD63E24E504AB00FB33F7 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		58BDD64024E5069F00FB33F7 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		58C48D0B24E50FFD00F7366E /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		58C48D1024E529D000F7366E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		58C48D1224E5343000F7366E /* CustomCartBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCartBarButton.swift; sourceTree = "<group>"; };
+		58D3075E24E418F500EC6611 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		58D3076024E41A9E00EC6611 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		58D3076224E41DF500EC6611 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		58DAD46C24E3D8EB004350AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		58DAD46E24E3D8FF004350AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,10 +171,28 @@
 			path = ZivameSysTestUITests;
 			sourceTree = "<group>";
 		};
+		58C48D0A24E50FC300F7366E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D0B24E50FFD00F7366E /* CartTableViewCell.swift */,
+				58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */,
+				58C48D1224E5343000F7366E /* CustomCartBarButton.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		58C48D0F24E529B300F7366E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D1024E529D000F7366E /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		58DAD46824E3D6CE004350AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				582B97B024E3CFCF00774924 /* ViewController.swift */,
+				58DAD47024E3DE60004350AA /* CartViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +209,9 @@
 		58DAD46A24E3D6E4004350AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				58C48D0F24E529B300F7366E /* DataManager */,
+				58D3075E24E418F500EC6611 /* ApiManager.swift */,
+				58BDD63E24E504AB00FB33F7 /* Products.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,8 +221,20 @@
 			children = (
 				58DAD46C24E3D8EB004350AA /* Constants.swift */,
 				58DAD46E24E3D8FF004350AA /* Extensions.swift */,
+				58D3076024E41A9E00EC6611 /* NetworkManager.swift */,
+				58D3076224E41DF500EC6611 /* Helper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		58DAD47024E3DE60004350AA /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D0A24E50FC300F7366E /* Cells */,
+				582B97B024E3CFCF00774924 /* CartViewController.swift */,
+				58BDD64024E5069F00FB33F7 /* CartViewModel.swift */,
+			);
+			path = CartViewController;
 			sourceTree = "<group>";
 		};
 		9A36A01B68B4C08C8FD61B95 /* Frameworks */ = {
@@ -321,6 +372,7 @@
 				582B97BC24E3CFD000774924 /* LaunchScreen.storyboard in Resources */,
 				582B97B924E3CFD000774924 /* Assets.xcassets in Resources */,
 				582B97B424E3CFCF00774924 /* Main.storyboard in Resources */,
+				58C48D0E24E50FFD00F7366E /* CartTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,10 +502,18 @@
 			files = (
 				58DAD46D24E3D8EB004350AA /* Constants.swift in Sources */,
 				58DAD46F24E3D8FF004350AA /* Extensions.swift in Sources */,
-				582B97B124E3CFCF00774924 /* ViewController.swift in Sources */,
+				582B97B124E3CFCF00774924 /* CartViewController.swift in Sources */,
+				58C48D0D24E50FFD00F7366E /* CartTableViewCell.swift in Sources */,
+				58D3076324E41DF500EC6611 /* Helper.swift in Sources */,
+				58D3075F24E418F500EC6611 /* ApiManager.swift in Sources */,
+				58D3076124E41A9E00EC6611 /* NetworkManager.swift in Sources */,
 				582B97B724E3CFCF00774924 /* ZivameSysTest.xcdatamodeld in Sources */,
+				58C48D1324E5343000F7366E /* CustomCartBarButton.swift in Sources */,
+				58BDD63F24E504AB00FB33F7 /* Products.swift in Sources */,
 				582B97AD24E3CFCF00774924 /* AppDelegate.swift in Sources */,
 				582B97AF24E3CFCF00774924 /* SceneDelegate.swift in Sources */,
+				58C48D1124E529D000F7366E /* DataManager.swift in Sources */,
+				58BDD64124E5069F00FB33F7 /* CartViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
