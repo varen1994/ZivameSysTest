@@ -36,11 +36,16 @@ class CartViewController: BaseViewController,BaseViewControllerDelegate {
             self.cartTableView.separatorStyle = .singleLine
             self.cartTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0 )
             self.removeTableHeaderView()
-            self.cartTableView.separatorStyle = .none
+            self.cartTableView.separatorStyle = .singleLine
+            self.cartTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             self.checkOutButton.isHidden = false
+             self.cartTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 60))
         } else {
-             self.checkOutButton.isHidden = true
+            self.cartTableView.separatorStyle = .none
+            self.checkOutButton.isHidden = true
             self.addNoDataViewToTableView()
+            self.cartTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 0.01))
+           
         }
         self.cartTableView.reloadData()
     }

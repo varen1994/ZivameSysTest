@@ -9,9 +9,12 @@
 import UIKit
 
 class OrderSuccessViewController: UIViewController {
-
+    
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       // self.widthConstraint.constant = 0.0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,8 +31,5 @@ class OrderSuccessViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.popViewController(animated: true)
     }
-    
-    
-
 
 }
