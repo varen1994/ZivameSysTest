@@ -49,7 +49,7 @@ final class DataManager: NSObject {
     }
     
     
-    func incrementOrDecrementNumberOfItems(product:Product)->Bool {
+    @discardableResult func incrementOrDecrementNumberOfItems(product:Product)->Bool {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return false }
         guard let name = product.name, name.count != 0 else { return false }
         let context =  appDelegate.persistentContainer.viewContext

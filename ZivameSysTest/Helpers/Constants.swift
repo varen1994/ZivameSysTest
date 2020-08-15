@@ -17,10 +17,16 @@ struct Constants {
     }
     
     struct AlertString {
+        static let operationCantCancel = "Operation cannot be cancelled."
         static let undefinedURL = "Undefined url please try again later"
         static let errorOccured = "Some error occured please try again later"
         static let internetNotConnected = "Internet is not connected."
         static let internetConnected = "Internet is connected."
+        static let addToCart = "Add to Cart"
+        static let addWishList = "Add to wishlist"
+        static let removeWishList = "Remove from wishlist"
+        static let removeFromCart = "Remove from Cart"
+        static let cancel = "Cancel"
     }
 
 }

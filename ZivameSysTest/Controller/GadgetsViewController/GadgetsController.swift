@@ -16,12 +16,14 @@ class GadgetsViewController: BaseViewController, BaseViewControllerDelegate {
     var viewModel = GadgetsViewModel()
     
     lazy var activityIndicator:UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
         activityIndicator.style = .large
         activityIndicator.hidesWhenStopped = true
         activityIndicator.center = self.view.center
         activityIndicator.color = UIColor.blue
         activityIndicator.stopAnimating()
+        activityIndicator.layer.borderWidth = 2.0
+        activityIndicator.layer.borderColor = UIColor.blue.cgColor
         return activityIndicator
     }()
     var refreshControl:UIRefreshControl?
@@ -96,7 +98,6 @@ class GadgetsViewController: BaseViewController, BaseViewControllerDelegate {
         cartVC.products = self.products?.filter({($0.numberOfItems ?? 0) > 0})
         self.navigationController?.pushViewController(cartVC, animated: true)
     }
-    
     
 }
 

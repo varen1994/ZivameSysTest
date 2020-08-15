@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 protocol BaseViewControllerDelegate:class {
     func upDateCartItemsCount()
 }
@@ -22,7 +23,7 @@ class BaseViewController: UIViewController {
         }
     }
     weak var delegate:BaseViewControllerDelegate?
-     var products:[Product]?
+     var products:[Product]? = nil
      @IBOutlet weak var cartTableView: UITableView!
     
     override func viewDidLoad() {
@@ -54,16 +55,16 @@ extension BaseViewController:CartTableViewCellDelegate {
         guard let product = product else { return }
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
-        let addToCartalertAction = UIAlertAction(title: "Add to Cart", style: .default) { _ in
+        let addToCartalertAction = UIAlertAction(title: Constants.AlertString.addToCart, style: .default) { _ in
             self.showAnimationOfProductLoadedToCart(product: product, decrement: false)
         }
         
         let tupple = DataManager.shared.getProductsNumberOfItemInCartAndIfIsPresentInTheWishList(product: product)
-        let addToWishListalertAction = UIAlertAction(title: (tupple.1 == false ? "Add to wishlist" : "Remove from wishlist"), style: .default) { _ in
+        let addToWishListalertAction = UIAlertAction(title: (tupple.1 == false ? Constants.AlertString.addWishList :  Constants.AlertString.removeWishList), style: .default) { _ in
             self.showAnimationOfProductAddedToWishList(product: product)
         }
         
-        let removeFromCart = UIAlertAction(title: "Remove from Cart", style: .default) { _ in
+        let removeFromCart = UIAlertAction(title: Constants.AlertString.removeFromCart, style: .default) { _ in
             self.showAnimationOfProductLoadedToCart(product: product, decrement: true)
         }
         
@@ -74,7 +75,7 @@ extension BaseViewController:CartTableViewCellDelegate {
             alertController.addAction(removeFromCart)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: Constants.AlertString.cancel, style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
     }
@@ -125,7 +126,7 @@ extension BaseViewController:CartTableViewCellDelegate {
         }
         self.view.insertSubview(imageView!, aboveSubview: self.cartTableView)
         self.view.isUserInteractionEnabled = false
-        UIView.animate(withDuration: 2.0, animations: {
+        UIView.animate(withDuration: 1.2, animations: {
             imageView!.frame = toFrame
             imageView!.alpha = 0.25
         }) { (_) in

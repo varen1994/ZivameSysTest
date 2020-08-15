@@ -9,9 +9,11 @@
 import UIKit
 import Reachability
 import Combine
+import Alamofire
 
 class NetworkManager: NSObject {
 
+    var calledForFirstTime = false
     var reachability:Reachability?
     
     override init() {
@@ -34,23 +36,26 @@ class NetworkManager: NSObject {
     }
     
     @objc func reachabilityChanged(note: Notification) {
-      let reachability = note.object as! Reachability
-       switch reachability.connection {
-          case .wifi,.cellular:
-            return
-          default:
-             Helper.createAnAlertForNetworkFailure()
+        DispatchQueue.main.async {
+            let reachability = note.object as! Reachability
+            switch reachability.connection {
+               case .wifi,.cellular:
+                if self.calledForFirstTime == true {
+                   Helper.createAnAlertForNetworkSuccessfullyJoined()
+                } else{
+                   self.calledForFirstTime = true
+                }
+                 return
+               default:
+                  Helper.createAnAlertForNetworkFailure()
+             }
         }
+        
     }
     
     func isNetworkReachable()->Bool {
-        if let reachability = self.reachability {
-            switch reachability.connection {
-            case .wifi,.cellular:
-                return true
-            default:
-                return false
-            }
+        if NetworkReachabilityManager()!.isReachable {
+            return true
         }
          return false
     }
