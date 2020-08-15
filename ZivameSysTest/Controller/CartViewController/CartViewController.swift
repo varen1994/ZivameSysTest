@@ -7,25 +7,38 @@
 //
 
 import UIKit
+import SwiftMessages
 
 class CartViewController: BaseViewController,BaseViewControllerDelegate {
    
+    
     @IBOutlet weak var checkOutButton: RoundButton!
     lazy var activityIndicator:UIActivityIndicatorView = {
-           let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+           let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
            activityIndicator.style = .large
            activityIndicator.hidesWhenStopped = true
            activityIndicator.center = self.view.center
            activityIndicator.color = UIColor.blue
            activityIndicator.stopAnimating()
            activityIndicator.backgroundColor = UIColor.white
+           activityIndicator.layer.borderWidth = 2.0
+           activityIndicator.layer.borderColor = UIColor.blue.cgColor
            return activityIndicator
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .done, target: self, action: #selector(self.backButtonClicked))
         self.delegate = self
         self.upDateCartItemsCount()
+    }
+    
+    @objc func backButtonClicked() {
+        if self.view.isUserInteractionEnabled == false {
+            SwiftMessages.show(view: Helper.createAnAlertForApiError(stringMessage: Constants.AlertString.operationCantCancel))
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     func upDateCartItemsCount() {
@@ -36,11 +49,16 @@ class CartViewController: BaseViewController,BaseViewControllerDelegate {
             self.cartTableView.separatorStyle = .singleLine
             self.cartTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0 )
             self.removeTableHeaderView()
-            self.cartTableView.separatorStyle = .none
+            self.cartTableView.separatorStyle = .singleLine
+            self.cartTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             self.checkOutButton.isHidden = false
+             self.cartTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 60))
         } else {
-             self.checkOutButton.isHidden = true
+            self.cartTableView.separatorStyle = .none
+            self.checkOutButton.isHidden = true
             self.addNoDataViewToTableView()
+            self.cartTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 0.01))
+           
         }
         self.cartTableView.reloadData()
     }
