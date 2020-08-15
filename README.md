@@ -9,4 +9,4 @@ Created a ProtoType app for test
 ![ScreenShot 5](https://i.imgur.com/EpZ3JYO.png)
 
 and Here is the Video Link of Animation
-![Video 1](https://i.imgur.com/Q9Zp0qT.mp4)
+https://i.imgur.com/Q9Zp0qT.mp4
