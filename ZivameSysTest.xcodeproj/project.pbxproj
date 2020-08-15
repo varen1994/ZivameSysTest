@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		582B97AD24E3CFCF00774924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97AC24E3CFCF00774924 /* AppDelegate.swift */; };
+		582B97AF24E3CFCF00774924 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97AE24E3CFCF00774924 /* SceneDelegate.swift */; };
+		582B97B124E3CFCF00774924 /* GadgetsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97B024E3CFCF00774924 /* GadgetsController.swift */; };
+		582B97B424E3CFCF00774924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582B97B224E3CFCF00774924 /* Main.storyboard */; };
+		582B97B724E3CFCF00774924 /* ZivameSysTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 582B97B524E3CFCF00774924 /* ZivameSysTest.xcdatamodeld */; };
+		582B97B924E3CFD000774924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582B97B824E3CFD000774924 /* Assets.xcassets */; };
+		582B97BC24E3CFD000774924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */; };
+		582B97C724E3CFD100774924 /* ZivameSysTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97C624E3CFD100774924 /* ZivameSysTestTests.swift */; };
+		582B97D224E3CFD100774924 /* ZivameSysTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */; };
+		589C6FCB24E587DB00025642 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C6FCA24E587DB00025642 /* CartViewController.swift */; };
+		589C6FCE24E58E3B00025642 /* NoDataFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589C6FCD24E58E3B00025642 /* NoDataFoundView.xib */; };
+		589C6FD024E58E6A00025642 /* NoDataFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C6FCF24E58E6A00025642 /* NoDataFoundView.swift */; };
+		589C6FD324E59A5D00025642 /* OrderSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C6FD224E59A5D00025642 /* OrderSuccessViewController.swift */; };
+		58BDD63F24E504AB00FB33F7 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDD63E24E504AB00FB33F7 /* Products.swift */; };
+		58BDD64124E5069F00FB33F7 /* GadgetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDD64024E5069F00FB33F7 /* GadgetsViewModel.swift */; };
+		58C48D0D24E50FFD00F7366E /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D0B24E50FFD00F7366E /* CartTableViewCell.swift */; };
+		58C48D0E24E50FFD00F7366E /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */; };
+		58C48D1124E529D000F7366E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1024E529D000F7366E /* DataManager.swift */; };
+		58C48D1324E5343000F7366E /* CustomCartBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1224E5343000F7366E /* CustomCartBarButton.swift */; };
+		58C48D1624E549A200F7366E /* ProductInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1424E549A200F7366E /* ProductInfo+CoreDataClass.swift */; };
+		58C48D1724E549A200F7366E /* ProductInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1524E549A200F7366E /* ProductInfo+CoreDataProperties.swift */; };
+		58C48D1A24E5628D00F7366E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C48D1924E5628D00F7366E /* BaseViewController.swift */; };
+		58D3075F24E418F500EC6611 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3075E24E418F500EC6611 /* ApiManager.swift */; };
+		58D3076124E41A9E00EC6611 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3076024E41A9E00EC6611 /* NetworkManager.swift */; };
+		58D3076324E41DF500EC6611 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3076224E41DF500EC6611 /* Helper.swift */; };
+		58DAD46D24E3D8EB004350AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAD46C24E3D8EB004350AA /* Constants.swift */; };
+		58DAD46F24E3D8FF004350AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAD46E24E3D8FF004350AA /* Extensions.swift */; };
+		7C863471BC58228E5C3CC4CB /* Pods_ZivameSysTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */; };
+		9313FCDF2D1F1D882205EEB2 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006E5F7B8B932C5412DA5ED5 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework */; };
+		D1827E726CD3601072EA7EA7 /* Pods_ZivameSysTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E28DCFFBAAF422A97F3B1 /* Pods_ZivameSysTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		582B97C324E3CFD100774924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582B97A124E3CFCF00774924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 582B97A824E3CFCF00774924;
+			remoteInfo = ZivameSysTest;
+		};
+		582B97CE24E3CFD100774924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582B97A124E3CFCF00774924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 582B97A824E3CFCF00774924;
+			remoteInfo = ZivameSysTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006E5F7B8B932C5412DA5ED5 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZivameSysTest_ZivameSysTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3940ABA38E606386ED74F8C7 /* Pods-ZivameSysTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTestTests/Pods-ZivameSysTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DECBF7ED78817850393C650 /* Pods-ZivameSysTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTestTests.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTestTests/Pods-ZivameSysTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		582B97A924E3CFCF00774924 /* ZivameSysTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZivameSysTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		582B97AC24E3CFCF00774924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		582B97AE24E3CFCF00774924 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		582B97B024E3CFCF00774924 /* GadgetsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GadgetsController.swift; sourceTree = "<group>"; };
+		582B97B324E3CFCF00774924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		582B97B624E3CFCF00774924 /* ZivameSysTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZivameSysTest.xcdatamodel; sourceTree = "<group>"; };
+		582B97B824E3CFD000774924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		582B97BB24E3CFD000774924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		582B97BD24E3CFD000774924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582B97C224E3CFD100774924 /* ZivameSysTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZivameSysTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		582B97C624E3CFD100774924 /* ZivameSysTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZivameSysTestTests.swift; sourceTree = "<group>"; };
+		582B97C824E3CFD100774924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582B97CD24E3CFD100774924 /* ZivameSysTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZivameSysTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZivameSysTestUITests.swift; sourceTree = "<group>"; };
+		582B97D324E3CFD100774924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589C6FCA24E587DB00025642 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		589C6FCD24E58E3B00025642 /* NoDataFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataFoundView.xib; sourceTree = "<group>"; };
+		589C6FCF24E58E6A00025642 /* NoDataFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataFoundView.swift; sourceTree = "<group>"; };
+		589C6FD224E59A5D00025642 /* OrderSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSuccessViewController.swift; sourceTree = "<group>"; };
+		58BDD63E24E504AB00FB33F7 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		58BDD64024E5069F00FB33F7 /* GadgetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GadgetsViewModel.swift; sourceTree = "<group>"; };
+		58C48D0B24E50FFD00F7366E /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		58C48D1024E529D000F7366E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		58C48D1224E5343000F7366E /* CustomCartBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCartBarButton.swift; sourceTree = "<group>"; };
+		58C48D1424E549A200F7366E /* ProductInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58C48D1524E549A200F7366E /* ProductInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		58C48D1924E5628D00F7366E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		58D3075E24E418F500EC6611 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		58D3076024E41A9E00EC6611 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		58D3076224E41DF500EC6611 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		58DAD46C24E3D8EB004350AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		58DAD46E24E3D8FF004350AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8192E7576484821B2BA6F738 /* Pods-ZivameSysTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest.release.xcconfig"; sourceTree = "<group>"; };
+		9072D9E6F94A6237DD972361 /* Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D28CA60BDC0F4142904E1D8D /* Pods-ZivameSysTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZivameSysTest.debug.xcconfig"; path = "Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZivameSysTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88E28DCFFBAAF422A97F3B1 /* Pods_ZivameSysTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZivameSysTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		582B97A624E3CFCF00774924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C863471BC58228E5C3CC4CB /* Pods_ZivameSysTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582B97BF24E3CFD100774924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1827E726CD3601072EA7EA7 /* Pods_ZivameSysTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582B97CA24E3CFD100774924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9313FCDF2D1F1D882205EEB2 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		582B97A024E3CFCF00774924 = {
+			isa = PBXGroup;
+			children = (
+				582B97AB24E3CFCF00774924 /* ZivameSysTest */,
+				582B97C524E3CFD100774924 /* ZivameSysTestTests */,
+				582B97D024E3CFD100774924 /* ZivameSysTestUITests */,
+				582B97AA24E3CFCF00774924 /* Products */,
+				C768CBCE57B6FE40D65B03E8 /* Pods */,
+				9A36A01B68B4C08C8FD61B95 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		582B97AA24E3CFCF00774924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				582B97A924E3CFCF00774924 /* ZivameSysTest.app */,
+				582B97C224E3CFD100774924 /* ZivameSysTestTests.xctest */,
+				582B97CD24E3CFD100774924 /* ZivameSysTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		582B97AB24E3CFCF00774924 /* ZivameSysTest */ = {
+			isa = PBXGroup;
+			children = (
+				58DAD46B24E3D8CE004350AA /* Helpers */,
+				58DAD46A24E3D6E4004350AA /* Model */,
+				58DAD46924E3D6DD004350AA /* View */,
+				58DAD46824E3D6CE004350AA /* Controller */,
+				582B97AC24E3CFCF00774924 /* AppDelegate.swift */,
+				582B97AE24E3CFCF00774924 /* SceneDelegate.swift */,
+				582B97B824E3CFD000774924 /* Assets.xcassets */,
+				582B97BD24E3CFD000774924 /* Info.plist */,
+				582B97B524E3CFCF00774924 /* ZivameSysTest.xcdatamodeld */,
+			);
+			path = ZivameSysTest;
+			sourceTree = "<group>";
+		};
+		582B97C524E3CFD100774924 /* ZivameSysTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				582B97C624E3CFD100774924 /* ZivameSysTestTests.swift */,
+				582B97C824E3CFD100774924 /* Info.plist */,
+			);
+			path = ZivameSysTestTests;
+			sourceTree = "<group>";
+		};
+		582B97D024E3CFD100774924 /* ZivameSysTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				582B97D124E3CFD100774924 /* ZivameSysTestUITests.swift */,
+				582B97D324E3CFD100774924 /* Info.plist */,
+			);
+			path = ZivameSysTestUITests;
+			sourceTree = "<group>";
+		};
+		589C6FC924E587B700025642 /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				589C6FCA24E587DB00025642 /* CartViewController.swift */,
+			);
+			path = CartViewController;
+			sourceTree = "<group>";
+		};
+		589C6FCC24E58E3000025642 /* NoDataFoundView */ = {
+			isa = PBXGroup;
+			children = (
+				589C6FCD24E58E3B00025642 /* NoDataFoundView.xib */,
+				589C6FCF24E58E6A00025642 /* NoDataFoundView.swift */,
+			);
+			path = NoDataFoundView;
+			sourceTree = "<group>";
+		};
+		589C6FD124E59A3A00025642 /* OrderSuccessViewController */ = {
+			isa = PBXGroup;
+			children = (
+				589C6FD224E59A5D00025642 /* OrderSuccessViewController.swift */,
+			);
+			path = OrderSuccessViewController;
+			sourceTree = "<group>";
+		};
+		58C48D0A24E50FC300F7366E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D0B24E50FFD00F7366E /* CartTableViewCell.swift */,
+				58C48D0C24E50FFD00F7366E /* CartTableViewCell.xib */,
+				58C48D1224E5343000F7366E /* CustomCartBarButton.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		58C48D0F24E529B300F7366E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D1024E529D000F7366E /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		58C48D1824E5627400F7366E /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D1924E5628D00F7366E /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		58DAD46824E3D6CE004350AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				589C6FD124E59A3A00025642 /* OrderSuccessViewController */,
+				589C6FC924E587B700025642 /* CartViewController */,
+				58C48D1824E5627400F7366E /* BaseViewController */,
+				58DAD47024E3DE60004350AA /* GadgetsViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58DAD46924E3D6DD004350AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				589C6FCC24E58E3000025642 /* NoDataFoundView */,
+				582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */,
+				582B97B224E3CFCF00774924 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58DAD46A24E3D6E4004350AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D1424E549A200F7366E /* ProductInfo+CoreDataClass.swift */,
+				58C48D1524E549A200F7366E /* ProductInfo+CoreDataProperties.swift */,
+				58C48D0F24E529B300F7366E /* DataManager */,
+				58D3075E24E418F500EC6611 /* ApiManager.swift */,
+				58BDD63E24E504AB00FB33F7 /* Products.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58DAD46B24E3D8CE004350AA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58DAD46C24E3D8EB004350AA /* Constants.swift */,
+				58DAD46E24E3D8FF004350AA /* Extensions.swift */,
+				58D3076024E41A9E00EC6611 /* NetworkManager.swift */,
+				58D3076224E41DF500EC6611 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		58DAD47024E3DE60004350AA /* GadgetsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58C48D0A24E50FC300F7366E /* Cells */,
+				582B97B024E3CFCF00774924 /* GadgetsController.swift */,
+				58BDD64024E5069F00FB33F7 /* GadgetsViewModel.swift */,
+			);
+			path = GadgetsViewController;
+			sourceTree = "<group>";
+		};
+		9A36A01B68B4C08C8FD61B95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBAB99722CB3C24567C8848D /* Pods_ZivameSysTest.framework */,
+				006E5F7B8B932C5412DA5ED5 /* Pods_ZivameSysTest_ZivameSysTestUITests.framework */,
+				E88E28DCFFBAAF422A97F3B1 /* Pods_ZivameSysTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C768CBCE57B6FE40D65B03E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D28CA60BDC0F4142904E1D8D /* Pods-ZivameSysTest.debug.xcconfig */,
+				8192E7576484821B2BA6F738 /* Pods-ZivameSysTest.release.xcconfig */,
+				673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */,
+				9072D9E6F94A6237DD972361 /* Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig */,
+				3940ABA38E606386ED74F8C7 /* Pods-ZivameSysTestTests.debug.xcconfig */,
+				3DECBF7ED78817850393C650 /* Pods-ZivameSysTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		582B97A824E3CFCF00774924 /* ZivameSysTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582B97D624E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTest" */;
+			buildPhases = (
+				C8A9E45970680B58BFB4AA98 /* [CP] Check Pods Manifest.lock */,
+				582B97A524E3CFCF00774924 /* Sources */,
+				582B97A624E3CFCF00774924 /* Frameworks */,
+				582B97A724E3CFCF00774924 /* Resources */,
+				EDE746FA2F989AF12E62C649 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZivameSysTest;
+			productName = ZivameSysTest;
+			productReference = 582B97A924E3CFCF00774924 /* ZivameSysTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		582B97C124E3CFD100774924 /* ZivameSysTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582B97D924E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTestTests" */;
+			buildPhases = (
+				EAFB8FD11200C57FD6BA8DF6 /* [CP] Check Pods Manifest.lock */,
+				582B97BE24E3CFD100774924 /* Sources */,
+				582B97BF24E3CFD100774924 /* Frameworks */,
+				582B97C024E3CFD100774924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582B97C424E3CFD100774924 /* PBXTargetDependency */,
+			);
+			name = ZivameSysTestTests;
+			productName = ZivameSysTestTests;
+			productReference = 582B97C224E3CFD100774924 /* ZivameSysTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		582B97CC24E3CFD100774924 /* ZivameSysTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582B97DC24E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTestUITests" */;
+			buildPhases = (
+				80ABDD00353FE8E90477F2A8 /* [CP] Check Pods Manifest.lock */,
+				582B97C924E3CFD100774924 /* Sources */,
+				582B97CA24E3CFD100774924 /* Frameworks */,
+				582B97CB24E3CFD100774924 /* Resources */,
+				B1B856C7827989712C0BB971 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582B97CF24E3CFD100774924 /* PBXTargetDependency */,
+			);
+			name = ZivameSysTestUITests;
+			productName = ZivameSysTestUITests;
+			productReference = 582B97CD24E3CFD100774924 /* ZivameSysTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		582B97A124E3CFCF00774924 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Varender;
+				TargetAttributes = {
+					582B97A824E3CFCF00774924 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					582B97C124E3CFD100774924 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 582B97A824E3CFCF00774924;
+					};
+					582B97CC24E3CFD100774924 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 582B97A824E3CFCF00774924;
+					};
+				};
+			};
+			buildConfigurationList = 582B97A424E3CFCF00774924 /* Build configuration list for PBXProject "ZivameSysTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 582B97A024E3CFCF00774924;
+			productRefGroup = 582B97AA24E3CFCF00774924 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				582B97A824E3CFCF00774924 /* ZivameSysTest */,
+				582B97C124E3CFD100774924 /* ZivameSysTestTests */,
+				582B97CC24E3CFD100774924 /* ZivameSysTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		582B97A724E3CFCF00774924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582B97BC24E3CFD000774924 /* LaunchScreen.storyboard in Resources */,
+				589C6FCE24E58E3B00025642 /* NoDataFoundView.xib in Resources */,
+				582B97B924E3CFD000774924 /* Assets.xcassets in Resources */,
+				582B97B424E3CFCF00774924 /* Main.storyboard in Resources */,
+				58C48D0E24E50FFD00F7366E /* CartTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582B97C024E3CFD100774924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582B97CB24E3CFD100774924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80ABDD00353FE8E90477F2A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZivameSysTest-ZivameSysTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B856C7827989712C0BB971 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest-ZivameSysTestUITests/Pods-ZivameSysTest-ZivameSysTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A9E45970680B58BFB4AA98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZivameSysTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAFB8FD11200C57FD6BA8DF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZivameSysTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE746FA2F989AF12E62C649 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZivameSysTest/Pods-ZivameSysTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		582B97A524E3CFCF00774924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DAD46D24E3D8EB004350AA /* Constants.swift in Sources */,
+				58DAD46F24E3D8FF004350AA /* Extensions.swift in Sources */,
+				582B97B124E3CFCF00774924 /* GadgetsController.swift in Sources */,
+				58C48D0D24E50FFD00F7366E /* CartTableViewCell.swift in Sources */,
+				58D3076324E41DF500EC6611 /* Helper.swift in Sources */,
+				58D3075F24E418F500EC6611 /* ApiManager.swift in Sources */,
+				58D3076124E41A9E00EC6611 /* NetworkManager.swift in Sources */,
+				58C48D1A24E5628D00F7366E /* BaseViewController.swift in Sources */,
+				589C6FD024E58E6A00025642 /* NoDataFoundView.swift in Sources */,
+				58C48D1724E549A200F7366E /* ProductInfo+CoreDataProperties.swift in Sources */,
+				582B97B724E3CFCF00774924 /* ZivameSysTest.xcdatamodeld in Sources */,
+				58C48D1324E5343000F7366E /* CustomCartBarButton.swift in Sources */,
+				58C48D1624E549A200F7366E /* ProductInfo+CoreDataClass.swift in Sources */,
+				58BDD63F24E504AB00FB33F7 /* Products.swift in Sources */,
+				582B97AD24E3CFCF00774924 /* AppDelegate.swift in Sources */,
+				582B97AF24E3CFCF00774924 /* SceneDelegate.swift in Sources */,
+				58C48D1124E529D000F7366E /* DataManager.swift in Sources */,
+				589C6FCB24E587DB00025642 /* CartViewController.swift in Sources */,
+				589C6FD324E59A5D00025642 /* OrderSuccessViewController.swift in Sources */,
+				58BDD64124E5069F00FB33F7 /* GadgetsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582B97BE24E3CFD100774924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582B97C724E3CFD100774924 /* ZivameSysTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582B97C924E3CFD100774924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582B97D224E3CFD100774924 /* ZivameSysTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		582B97C424E3CFD100774924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 582B97A824E3CFCF00774924 /* ZivameSysTest */;
+			targetProxy = 582B97C324E3CFD100774924 /* PBXContainerItemProxy */;
+		};
+		582B97CF24E3CFD100774924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 582B97A824E3CFCF00774924 /* ZivameSysTest */;
+			targetProxy = 582B97CE24E3CFD100774924 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		582B97B224E3CFCF00774924 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582B97B324E3CFCF00774924 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		582B97BA24E3CFD000774924 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582B97BB24E3CFD000774924 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		582B97D424E3CFD100774924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		582B97D524E3CFD100774924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		582B97D724E3CFD100774924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28CA60BDC0F4142904E1D8D /* Pods-ZivameSysTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZivameSysTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoOrganization.ZivameSysTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		582B97D824E3CFD100774924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8192E7576484821B2BA6F738 /* Pods-ZivameSysTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZivameSysTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoOrganization.ZivameSysTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		582B97DA24E3CFD100774924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3940ABA38E606386ED74F8C7 /* Pods-ZivameSysTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZivameSysTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoOrganization.ZivameSysTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZivameSysTest.app/ZivameSysTest";
+			};
+			name = Debug;
+		};
+		582B97DB24E3CFD100774924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DECBF7ED78817850393C650 /* Pods-ZivameSysTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZivameSysTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoOrganization.ZivameSysTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZivameSysTest.app/ZivameSysTest";
+			};
+			name = Release;
+		};
+		582B97DD24E3CFD100774924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673102244F13BBEA85116EA0 /* Pods-ZivameSysTest-ZivameSysTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZivameSysTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoOrganization.ZivameSysTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZivameSysTest;
+			};
+			name = Debug;
+		};
+		582B97DE24E3CFD100774924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9072D9E6F94A6237DD972361 /* Pods-ZivameSysTest-ZivameSysTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZivameSysTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoOrganization.ZivameSysTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZivameSysTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		582B97A424E3CFCF00774924 /* Build configuration list for PBXProject "ZivameSysTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582B97D424E3CFD100774924 /* Debug */,
+				582B97D524E3CFD100774924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582B97D624E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582B97D724E3CFD100774924 /* Debug */,
+				582B97D824E3CFD100774924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582B97D924E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582B97DA24E3CFD100774924 /* Debug */,
+				582B97DB24E3CFD100774924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582B97DC24E3CFD100774924 /* Build configuration list for PBXNativeTarget "ZivameSysTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582B97DD24E3CFD100774924 /* Debug */,
+				582B97DE24E3CFD100774924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		582B97B524E3CFCF00774924 /* ZivameSysTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				582B97B624E3CFCF00774924 /* ZivameSysTest.xcdatamodel */,
+			);
+			currentVersion = 582B97B624E3CFCF00774924 /* ZivameSysTest.xcdatamodel */;
+			path = ZivameSysTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 582B97A124E3CFCF00774924 /* Project object */;
+}
